@@ -1,0 +1,429 @@
+.content-logo {
+    background-color: transparent;
+    width: 100%;
+}
+
+.section-loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 500%;
+    z-index: 9999;
+    background: 50% 50% no-repeat rgba(0, 0, 0, 0.8);
+}
+
+.thumb-loader {
+    height: 70px;
+    width: 70px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.part-loader {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000;
+    overflow: show;
+    margin: auto;
+    text-align: center;
+}
+
+.header-title-report {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.header-title-report > div {
+    margin-bottom: 2%;
+}
+
+.header-title-report > p {
+    font-size: 0.8rem;
+    color: #50b380;
+    transition: transform .2s;
+}
+
+.header-title-report > p:hover {
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+.title-checking-balance {
+    background-color: #e4e7f1;
+    height: 0;
+    font-size: 0.8rem;
+}
+
+.row-table-sticky {
+    width: 100%;
+    margin: auto;
+    background: #fff;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.table-sticky {
+    font-size: 0.8rem;
+}
+
+.table-sticky tr {
+    cursor: pointer;
+}
+
+.table-sticky tr:hover td {
+    color: #3e8b64;
+    background-color: #f1f5fa;
+}
+
+.table-sticky thead th,
+.table-sticky tbody td {
+    padding: 10px;
+}
+
+.table-sticky tbody td {
+    border-color: #d6d8e0;
+    color: #425176;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.table-sticky thead th {
+    font-weight: bold;
+    text-align: center;
+    background: #50b380;
+    color: #fff;
+    position: sticky;
+    top: -1px;
+    vertical-align: middle;
+}
+
+.table-sticky thead tr.sticky-header-first th, thead tr.sticky-header-first td {
+    position: sticky;
+    top: 0;
+    background: #50b380;
+}
+
+.hard_left-head {
+    position: sticky;
+    left:0;
+    width: auto;
+    z-index: 1;
+}
+
+.next_left-head {
+    position: sticky;
+    left: 88px;
+    width: auto;
+    z-index: 1;
+}
+
+.hard_left {
+    position: sticky;
+    left: 0;
+    top: 143px;
+    z-index: 1;
+    background: #fff;
+}
+
+.next_left{
+    position: sticky;
+    left: 88px;
+    top: 143px;
+    z-index: 1;
+    background: #fff;
+}
+
+.table-sticky thead tr.sticky-header-second th, thead tr.sticky-header-second td {
+    position: sticky;
+    top: 41px;
+    background: #50b380;
+    font-size: 0.6rem;
+}
+
+.table-sticky thead tr.sticky-header-third th, thead tr.sticky-header-third td {
+    position: sticky;
+    top: 81px;
+    background: #50b380;
+    font-size: 0.6rem;
+}
+
+.table-sticky tbody tr.border-top-total td {
+    color: #fff;
+    font-weight: bold;
+    background: #50b380;
+}
+
+.scope-action-table {
+    float: right;
+}
+
+.header-report-company {
+    background: #fff !important;
+    border-bottom: 1px solid #50b380;
+}
+
+.scope-action-table-dropdown {
+    float: right;
+    width: 55%;
+}
+
+.scope-action-table-min {
+    float: right;
+    padding: 20px;
+    display: none;
+}
+
+.account-tree {
+    margin: 15px;
+}
+
+.action-tree-account {
+    position: absolute;
+    display: inline;
+}
+
+.action-tree-pointer {
+    cursor: pointer;
+}
+
+.div-tree-account li {
+	list-style-type: none;
+	margin: 0;
+	padding: 10px 5px 0 5px;
+	position: relative
+}
+
+.div-tree-account li::before,
+.div-tree-account li::after {
+	content: '';
+	left: -20px;
+	position: absolute;
+	right: auto
+}
+
+.arrow-nested {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.div-tree-account li .account-tree-title {
+	display: inline-block;
+	padding: 3px 8px;
+	text-decoration: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.div-tree-account > ul > li::before,
+.div-tree-account > ul > li::after {
+	border: 0
+}
+
+.div-tree-account li:last-child::before {
+	height: 27px
+}
+
+.div-tree-account li .account-tree-title:hover {
+    font-weight: bolder;
+}
+
+[aria-expanded="false"]>.expanded,
+[aria-expanded="true"]>.collapsed {
+	display: none;
+}
+
+.notification-manual-custom {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background: rgb(44,101,60);
+    box-shadow: 0px 10px 25px 0px rgba(27, 92, 255, .2);
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 10px 8px  20px 20px;
+    color: #fff;
+    visibility: hidden;
+    transition: all .3s ease;
+    transform: translate(100%);
+    width: calc(100% - 40px);
+    max-width: 400px;
+}
+
+.notification-manual-custom h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.notification-manual-custom p {
+    font-size: .85rem;
+    opacity: .7;
+}
+
+.notification-manual-custom.visible {
+    visibility: visible;
+    transform: translate(0);
+}
+
+.notification-manual-custom.remove {
+    opacity: 0;
+    transform: translate(0) scale(.8) !important;
+}
+
+.title-link-table {
+    color: #50b380;
+}
+
+.actions-table {
+    margin: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.radio-buttons {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.custom-radio input {
+    display: none;
+}
+
+.radio-btn {
+    margin: 5px;
+    width: 140px;
+    height: 50px;
+    border: 2px solid #c3c3c367;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px #c3c3c367;
+    cursor: pointer;
+}
+
+.radio-btn > i {
+    color: #fff;
+    background: #50b380;
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(4);
+    border-radius: 50px;
+    padding: 3px;
+    transition: 0.2s;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.radio-btn .option-check {
+    width: 150px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radio-btn .option-check h3 {
+    line-height: 35px;
+    font-size: 0.8rem;
+}
+
+.custom-radio input:checked + .radio-btn {
+    border: 2px solid #50b380;
+}
+
+.custom-radio input:checked + .radio-btn > i {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.label-required:after {
+    content: " *";
+    color: #ef4d56;
+}
+
+.items-hide {
+    display: none;
+}
+
+.items-inline {
+    display: inline;
+}
+
+.input-group-prefix {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.prefix-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.prefix input {
+    border-radius: 0px 4px 4px 0px;
+}
+
+.prefix .input-group-prefix {
+    border-right: 0;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.input-group-prefix.prefix {
+    border-radius: 4px 0px 0px 4px;
+    border-right: 0;
+}
+
+.iffyTip {
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+.hideText2{
+    max-width:200px;
+}
+
+.pref-table-details {
+    background-color: #fff !important;
+    font-size: 0.8rem;
+}
+
+.text-has-error {
+    color: #f44336;
+}
+
+.text-has-success {
+    color: #50b380;
+}
+
+.btn-posted-transaction-action {
+    display: block;
+    margin: auto;
+    height: 30px;
+    line-height: 5px;
+    width: 75px;
+    padding: 10px;
+    font-size: 0.7rem;
+}
+
